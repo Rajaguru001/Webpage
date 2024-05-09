@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Welcome Page</title>
+    <style>
+        input[type=submit]{
+            background-color:red;
+            opacity: 0.6;
+            border: none;
+            color: #e8e5e5;
+            padding: 8px 15px;
+            text-decoration:none;
+            margin: 4px 2px;
+            cursor: pointer;
+
+        }
+    </style>
+    </head>
+    <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >MOVIE TICKET REGISTER</h1>
+<hr>
+<hr>
+ <form action="webpage2.html" method="post">
+    <center>
+        <table >
+            <tr>
+                <td> NAME</td> <td><input type="text" placeholder="User Name" required></td>
+            </tr>
+            <tr>
+                <td>EMAIL</td> <td><input type="email" placeholder="email" required></td>
+            </tr>
+            <tr>
+                <td>PHONE NUMBER</td> <td><input type="number"placeholder="Phonenumber" required min="10"></td>
+                </tr>
+                <tr>
+                    <td>GENDER</td> 
+                    <td>
+                        <input type="radio" name="Gender" required>MALE
+                        <input type="radio" name="Gender" required>FEMALE
+                    </td>
+                </tr>
+                <tr><td><label for="vol">TOTAL TICKETS(1 to 10)</label>
+                    <input type="range" id="vol" name="vol" min="1" max="10" style="margin-left:80%" style="padding-bottom:20%;"></td>
+                </tr>
+              
+                <tr><td>
+                    <label for="TICKET">DATE OF BOOKING</label>
+                     <input type="date" id="TICKET" name="TICKET" style="margin-left: 15%;"> </td>
+                   </tr> 
+                 
+                   <tr>
+                    <td>TICKET PRICE RANGE:</td>
+                    <td>
+                        <select>
+                            <option>80</option>
+                            <option>120</option>
+                            <option>180</option>
+                            <option>240</option>
+                        </select>
+                    </td>
+                </tr>   
+                
+        </table>   
+        <tr>
+            <td><input type="submit" value="submit"></td>
+        </tr>    
+     
+    </center>
+ </form> 
+
+
+</html>
