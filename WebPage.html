@@ -4,35 +4,42 @@
     <title>Welcome Page</title>
     <style>
         input[type=submit]{
-            background-color:red;
-            opacity: 0.6;
+            background-color:rgba(249, 0, 0, 0.925);
+            opacity: 10;
             border: none;
-            color: #e8e5e5;
+            color: #fef9f9;
             padding: 8px 15px;
             text-decoration:none;
             margin: 4px 2px;
             cursor: pointer;
+            display: inline-block;
+            box-shadow: 1px 2px 3px 2px rgba(233, 103, 103, 0.4);
 
         }
     </style>
-    </head>
-    <h1 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >MOVIE TICKET REGISTER</h1>
+    <link rel="stylesheet" href="box.css">
+    </head>  
+    <body style="background-image: url(litegrey2.jpg);">
+    <h1 style="text-align: center;"class=" header1" >MOVIE TICKET REGISTER</h1>
 <hr>
 <hr>
+
  <form action="webpage2.html" method="post">
     <center>
+        <div class="bgcolour">
+        <div class="block2">
         <table >
             <tr>
-                <td> NAME</td> <td><input type="text" placeholder="User Name" required></td>
+                <td> NAME :</td> <td><input type="text" placeholder="User Name" required></td>
             </tr>
             <tr>
-                <td>EMAIL</td> <td><input type="email" placeholder="email" required></td>
+                <td>EMAIL :</td> <td><input type="email" placeholder="email" required></td>
             </tr>
             <tr>
-                <td>PHONE NUMBER</td> <td><input type="number"placeholder="Phonenumber" required min="10"></td>
+                <td>PHONE NUMBER :</td> <td><input type="number"placeholder="Phonenumber" required min="10"></td>
                 </tr>
                 <tr>
-                    <td>GENDER</td> 
+                    <td>GENDER :</td> 
                     <td>
                         <input type="radio" name="Gender" required>MALE
                         <input type="radio" name="Gender" required>FEMALE
@@ -43,8 +50,8 @@
                 </tr>
               
                 <tr><td>
-                    <label for="TICKET">DATE OF BOOKING</label>
-                     <input type="date" id="TICKET" name="TICKET" style="margin-left: 15%;"> </td>
+                    <label for="TICKET">DATE OF BOOKING :</label>
+                     <input type="date" id="TICKET" name="TICKET" style="margin-left: 15%" min="2024-05-10" max="2024-05-27"> </td>
                    </tr> 
                  
                    <tr>
@@ -57,15 +64,34 @@
                             <option>240</option>
                         </select>
                     </td>
-                </tr>   
-                
-        </table>   
-        <tr>
-            <td><input type="submit" value="submit"></td>
-        </tr>    
+                </tr>  
+                <tr>
+                    <td>SHOW TIME</td>
+                    <td>
+                        <select>
+                            <option>6:00PM</option>
+                            <option>7:20PM</option>
+                            <option>9:00PM</option>
+                            <option>11:15PM</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>  
+            
+        </table>  
+    </div>
+</div>
+   
+      
+   
+
      
     </center>
  </form> 
+</body>
 
 
 </html>
