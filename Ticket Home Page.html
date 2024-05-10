@@ -6,33 +6,53 @@
         <center>
            <style>
             input[type=submit]{
-                background-color:rgb(46, 46, 46);
-            opacity: 0.6;
+                background-color:rgba(249, 0, 0, 0.925);
+            opacity: 15;
             border: none;
-            color: #eae4e4;
+            color: #fffbfb;
             padding: 10px 15px;
             text-decoration:none;
             margin: 4px 2px;
             cursor: pointer;
             }
         </style> 
+        <link rel="stylesheet" href="box.css">
     </head>
-    <body style="background-image:url(Cinema.jpg) ;">
+    <body style="background-image:url(litegrey2.jpg);height: 100%; width: 100%;">
         
-    <h1 style="color: #f1eeee;">VETRI CINEMAS</h1>
+    <h1 style="color:rgb(254, 254, 254);"class="jprbox">JPR CINEMAS</h1>
         </center>
-    <hr>
-    <center>
+        <h2 class="textstyle">UPCOMING MOVIES</h2>
+        <div class="upcomingmovies">
+            <marquee behavior="scroll" direction="margin-left" onmouseover="this.stop()"; onmouseout="this.start()"; scrollamount="13";>
+                <img src="godzilla.jpg" alt="godzilla" style="padding-right:20px;">
+                <img src="kanguva.jpg" alt="kanguva" style="padding-right:20px;">
+                <img src="keeper.jpg" alt="keeper" style="padding-right:20px;">
+                <img src="ghost.jpg" alt="Ghost" style="padding-right:20px;">
+                <img src="avathar.jpg" alt="Ghost" style="padding-right:20px;">
+            </marquee>
+        </div>
+    
+  <center>
     <form action="WebPage.html" method="get">
-        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(245, 239, 230);">AVAILABLE MOVIES</h1>
-        <table>
-            <tr>
-                <td><input type="submit" value="MANJUMELBOYS"><img src="download.jpg"></td>
-                <td><input type="submit" value="KUNFUPANDA"><img src="panda.jpg"></td>
-            </tr>
-        </table>
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgba(244, 28, 28, 0.925);">AVAILABLE MOVIES</h1>
+    </center>
+        <div class="container">
+        <div class="block img">
+                <td><input type="submit" value="MANJUMELBOYS" style="padding-right:10px;"> <a href="WebPage.html"><img src="download.jpg" style="padding-right:10px;"></a></td>   
+    </div>
+    <div class="block img ">
+        <td><input type="submit" value="KUNFUPANDA" style="padding-right:10px;"><a href="WebPage.html"><img src="panda.jpg" style="padding-right:10px;"></a></td>
+    </div>
+        <div class="block img">
+            <td><input type="submit" value="DUNKI" style="padding-right:10px;"><a href="WebPage.html"><img src="dunki.jpg" style="padding-right:10px;"></a></td>
+        </div>
+        <div class="block img">
+            <td><input type="submit" value="LIFT"style="padding-right:10px;"><a href="WebPage.html"><img src="lift.jpg"style="padding-right:10px;"></a></td>
+        </div>
+    </div>
     </form>
     </body>
-</center>
+
 
 </html>
