@@ -1,5 +1,10 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <head>
         <title>TICKET BOOKING
         </title>
@@ -15,17 +20,111 @@
             margin: 4px 2px;
             cursor: pointer;
             }
+.bodyfooter{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
         </style> 
         <link rel="stylesheet" href="box.css">
-    </head>
-    <body style="background-image:url(litegrey2.jpg);height: 100%; width: 100%;">
         
-    <h1 style="color:rgb(254, 254, 254);"class="jprbox">JPR CINEMAS</h1>
+</head>
+<body style="background-image:url(litegrey2.jpg);height: 100%; width: 100%;">
+    <nav class="jprbox">
+        <h1 style="text-align:center;">JPR CINEMAS <img src="jpr.jpg" alt="" height="40px" width="30px"> 
+    </nav>
         </center>
         <h2 class="textstyle">UPCOMING MOVIES</h2>
         <div class="upcomingmovies">
             <marquee behavior="scroll" direction="margin-left" onmouseover="this.stop()"; onmouseout="this.start()"; scrollamount="13";>
-                <img src="godzilla.jpg" alt="godzilla" style="padding-right:20px;">
+                <img src="godzilla.jpg" alt="godzilla" style="padding-right:20px">
                 <img src="kanguva.jpg" alt="kanguva" style="padding-right:20px;">
                 <img src="keeper.jpg" alt="keeper" style="padding-right:20px;">
                 <img src="ghost.jpg" alt="Ghost" style="padding-right:20px;">
@@ -39,20 +138,64 @@
     </center>
         <div class="container">
         <div class="block img">
-                <td><input type="submit" value="MANJUMELBOYS" style="padding-right:10px;"> <a href="WebPage.html"><img src="download.jpg" style="padding-right:10px;"></a></td>   
+                <td><input type="submit" value="ManjumelBoys" style="padding-right:10px;"> <a href="WebPage.html"><img src="manjumel.jpg" style="padding-right:10px;"></a></td>   
     </div>
     <div class="block img ">
-        <td><input type="submit" value="KUNFUPANDA" style="padding-right:10px;"><a href="WebPage.html"><img src="panda.jpg" style="padding-right:10px;"></a></td>
+        <td><input type="submit" value="Kunfu-Panda" style="padding-right:10px;"><a href="WebPage.html"><img src="kunfu.jpg" style="padding-right:10px;"></a></td>
     </div>
         <div class="block img">
-            <td><input type="submit" value="DUNKI" style="padding-right:10px;"><a href="WebPage.html"><img src="dunki.jpg" style="padding-right:10px;"></a></td>
+            <td><input type="submit" value="Ford Vs Ferrari" style="padding-right:10px;"><a href="WebPage.html"><img src="fvf.jpg" style="padding-right:10px;"></a></td>
         </div>
         <div class="block img">
-            <td><input type="submit" value="LIFT"style="padding-right:10px;"><a href="WebPage.html"><img src="lift.jpg"style="padding-right:10px;"></a></td>
+            <td><input type="submit" value="Batman"style="padding-right:10px;"><a href="WebPage.html"><img src="Batman.jpg"style="padding-right:10px;"></a></td>
+        </div>
+        <div class="block img">
+            <td><input type="submit" value="Gravity"style="padding-right:10px;"><a href="WebPage.html"><img src="gravity.jpg"style="padding-right:10px;"></a></td>
         </div>
     </div>
     </form>
     </body>
+    <hr>
+    <div class="bodyfooter">
 
-
+        <footer class="footer">
+           <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">our services</a></li>
+                  <li><a href="#">privacy policy</a></li>
+                  <li><a href="#">our Facility</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Our branches</h4>
+                <ul>
+                  <li><a href="#">Theni</a></li>
+                  <li><a href="#">Madurai</a></li>
+                  <li><a href="#">Dindigul</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>online Booking</h4>
+                <ul>
+                  <li><a href="#">Our Websites</a></li>
+                  <li><a href="#">Online Booking</a></li>
+                </ul>
+              </div>
+               <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i>  <img src="insta.jpg" alt="" height="15px" width="15px"></a>
+                <a href="#"><i class="fab fa-twitter"> <img src="facebook.jpg" alt="" height="15px" width="15px"> </i></a>
+                <a href="#"><i class="fab fa-twitter"> <img src="twitter.png" alt="" height="15px" width="15px"> </i></a>
+            </div>
+              </div> 
+            </div>
+           </div>
+        </footer>
+      
+    </div>
 </html>
